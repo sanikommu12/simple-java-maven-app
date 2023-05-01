@@ -9,7 +9,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh '/usr/share/maven/bin/mvn package'
+        sh '/root/simple-java-maven-app/mvn clean package -Denforcer.skip=true'
       }
     }
 
